@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+}
+
+/* header*/
+.header{
+	height: 10%;
+	background-color: blue;
+	padding: 20px;
+	text-align: center;
+}
+
+/*  navigation */
+.topnav{
+	overflow: hidden;
+	background-color: #333;
+	height: 10%;
+	padding: 10px;
+}
+
+/* topnav link */
+.topnav a{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 14px;
+	text-decoration: none;
+}
+
+/*  link color hover */
+.topnav a:hover{
+	color: red;
+	background-color: #ddd;
+}
+.contenter{
+	background-color: greenyellow;
+	height: 300px;
+}
+
+/* three unequal columns */
+.column{
+	float: left;
+	padding: 10px;
+}
+
+/* left column */
+.column.blog{
+    width: 25%;
+    height: 100%;
+    background-color: #e1e1e1;
+}
+
+/* content coiumn */
+.column.content{
+	width: 50%;
+	height: 100%;
+	background-color: #666;
+}
+
+/* right column */
+.column.side{
+	width: 25%;
+	height: 100%;
+}
+
+/* Clear floats after the columns */
+.contenter::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px){
+	.column.blog, .column.content, .column.side{
+		width: 100%;
+	}
+}
+.footer{
+	color: white;
+	background-color: #222;
+	padding: 10px;
+	text-align: center;
+}
